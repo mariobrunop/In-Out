@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <script src="script.js"></script>
+    <script src="script.js"></script>
     <title>In Out</title>
 </head>
 
@@ -41,39 +41,41 @@
 
     </section>
 
-    <section class="valores">
-        <div class="linha_titulos">
-            <p class="valor">Nome</p>
-            <p class="valor">Preço</p>
-            <p class="valor">Categoria</p>
-            <p class="valor">Data</p>
-        </div>
-        <div class="linha_valores">
-            <p class="valor">Desenvolvimento de site</p>
-            <p class="valor">R$ 12.000,00</p>
-            <p class="valor">Venda</p>
-            <p class="valor">13/04/2021</p>
-        </div>
-        <div class="linha_valores">
-            <p class="valor">Hamburguer</p>
-            <p class="valor" style="color: red;">- R$ 59,00</p>
-            <p class="valor">Alimentação</p>
-            <p class="valor">10/04/2021</p>
-        </div>
-        <div class="linha_valores">
-            <p class="valor">Aluguel do apartamento</p>
-            <p class="valor" style="color: red;">- R$ 1.200,00</p>
-            <p class="valor">Casa</p>
-            <p class="valor">27/03/2021</p>
-        </div>
-        <div class="linha_valores">
-            <p class="valor">Computador</p>
-            <p class="valor">R$ 5.400,00</p>
-            <p class="valor">Venda</p>
-            <p class="valor">15/03/2021</p>
-        </div>
+    <div class="valores-div">
+        <section class="valores">
+            <div class="linha_titulos">
+                <p class="valor">Nome</p>
+                <p class="valor">Preço</p>
+                <p class="valor">Categoria</p>
+                <p class="valor">Data</p>
+            </div>
+            <div class="linha_valores">
+                <p class="valor">Desenvolvimento de site</p>
+                <p class="valor">R$ 12.000,00</p>
+                <p class="valor">Venda</p>
+                <p class="valor">13/04/2021</p>
+            </div>
+            <div class="linha_valores">
+                <p class="valor">Hamburguer</p>
+                <p class="valor" style="color: red;">- R$ 59,00</p>
+                <p class="valor">Alimentação</p>
+                <p class="valor">10/04/2021</p>
+            </div>
+            <div class="linha_valores">
+                <p class="valor">Aluguel do apartamento</p>
+                <p class="valor" style="color: red;">- R$ 1.200,00</p>
+                <p class="valor">Casa</p>
+                <p class="valor">27/03/2021</p>
+            </div>
+            <div class="linha_valores">
+                <p class="valor">Computador</p>
+                <p class="valor">R$ 5.400,00</p>
+                <p class="valor">Venda</p>
+                <p class="valor">15/03/2021</p>
+            </div>
 
-    </section>
+        </section>
+    </div>
 
     <div class="janela-modal" id="janela-modal">
         <div class="modal">
@@ -81,13 +83,13 @@
             <div class="centralizar-modal">
                 <h2 class="modal-in">Cadastrar transação</h2>
                 <input class="input-cadastro" placeholder="Nome" type="text" name="nome" id="cadastro-nome">
-                <br>
                 <input class="input-cadastro" placeholder="Preço" type=" text" name="preco" id="cadastro-preco">
-                <br>
-                <button class="button-cadastro">Entrada</button>
-                <button class="button-cadastro">Saída</button>
-                <input class="input-cadastro type=" placeholder="Categoria" text" name="categoria" id="cadastro-categoria">
-                <br>
+                <div class="cadastro-button-div">
+                    <button class="button-cadastro-entrada">Entrada</button>
+                    <button class="button-cadastro-saida">Saída</button>
+                </div>
+                <input class="input-cadastro type=" placeholder="Categoria" text" name="categoria"
+                    id="cadastro-categoria">
                 <button class="button-cadastrar">Cadastrar</button>
             </div>
         </div>
