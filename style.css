@@ -10,6 +10,10 @@ body {
 
 }
 
+.valores_mobile {
+    display: none;
+}
+
 .header {
     width: auto;
     background-color: #5429CC;
@@ -233,9 +237,6 @@ select:focus {
 
 .janela-modal.abrir {
     display: flex;
-}
-.valores_mobile {
-    display: none;
 }
 
 @media(max-width: 650px) {
